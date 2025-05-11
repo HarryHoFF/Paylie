@@ -62,7 +62,7 @@ const transactions: Transaction[] = [
   { id: 50, name: "PayPal", date: "17/04/2025", amount: "12,38 €", type: "income" },
 
   // März 2025 usw. (fortsetzen für alle 9 Seiten)
-].reverse(); // Wichtig: Kehrt die Reihenfolge um für "neueste zuerst"
+]
   const handleLogin = () => {
     if (username === 'GoonDocksHaderslev' && password === '132313') {
       setLoggedIn(true);
