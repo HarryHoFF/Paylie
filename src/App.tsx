@@ -54,7 +54,6 @@ export default function App() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button onClick={handleLogin}>Log ind</button>
-          <p className="hint">Hint: Brugernavn: GoonDocksHaderslev<br/>Adgangskode: 132313</p>
         </div>
       </div>
     );
