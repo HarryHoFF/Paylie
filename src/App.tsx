@@ -16,28 +16,53 @@ export default function App() {
   const [showMitId, setShowMitId] = useState(false);
   const [currentAction, setCurrentAction] = useState<'send' | 'request' | null>(null);
 
-  const transactions: Transaction[] = [
-  { id: 1, name: "Deutsche Post AG", date: "01/04/2025", amount: "-20,07 €", type: "outcome" },
-  { id: 2, name: "PayPal", date: "01/04/2025", amount: "20,07 €", type: "income" },
-  { id: 3, name: "Deutsche Post AG", date: "01/04/2025", amount: "-20,07 €", type: "outcome" },
-  { id: 4, name: "Jana Schlechte", date: "01/04/2025", amount: "68,86 €", type: "income" },
-  { id: 5, name: "Nicole Boer", date: "02/04/2025", amount: "76,20 €", type: "income" },
-  { id: 6, name: "GOESTA-PER SIEVERS", date: "02/04/2025", amount: "-210,00 €", type: "outcome" },
-  { id: 7, name: "Jana Schlechte", date: "02/04/2025", amount: "-7,63 €", type: "outcome" },
-  { id: 8, name: "Jana Schlechte", date: "02/04/2025", amount: "34,28 €", type: "income" },
-  { id: 9, name: "Susanne Hauswirth", date: "02/04/2025", amount: "-74,76 €", type: "outcome" },
-  { id: 10, name: "Susanne Hauswirth", date: "02/04/2025", amount: "-38,19 €", type: "outcome" },
-  { id: 11, name: "Mayling Keun", date: "03/04/2025", amount: "31,38 €", type: "income" },
-  { id: 12, name: "Deutsche Post AG", date: "04/04/2025", amount: "-6,19 €", type: "outcome" },
-  { id: 13, name: "PayPal", date: "04/04/2025", amount: "6,19 €", type: "income" },
-  { id: 14, name: "Deutsche Post AG", date: "04/04/2025", amount: "-6,19 €", type: "outcome" },
-  { id: 15, name: "Fastspring BV", date: "04/04/2025", amount: "-19,06 €", type: "outcome" },
-  { id: 16, name: "PayPal", date: "04/04/2025", amount: "19,06 €", type: "income" },
-  { id: 17, name: "GOESTA-PER SIEVERS", date: "07/04/2025", amount: "210,00 €", type: "income" },
-  { id: 18, name: "Bernd Weiß", date: "08/04/2025", amount: "109,48 €", type: "income" },
-  { id: 19, name: "Ann-Kathrin Wille", date: "08/04/2025", amount: "31,33 €", type: "income" },
-  { id: 20, name: "Alexandra Sentner", date: "09/04/2025", amount: "133,59 €", type: "income" },
-];
+const transactions: Transaction[] = [
+  // Mai 2025
+  { id: 1, name: "Mona Ursula Plieninger", date: "09/05/2025", amount: "46,31 €", type: "income" },
+  { id: 3, name: "Deutsche Post AG", date: "09/05/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 4, name: "PayPal", date: "09/05/2025", amount: "6,19 €", type: "income" },
+  { id: 5, name: "Jana-Madlen Brügmann", date: "08/05/2025", amount: "54,62 €", type: "income" },
+  { id: 7, name: "Britta Janßen", date: "08/05/2025", amount: "33,32 €", type: "income" },
+  { id: 10, name: "Deutsche Post AG", date: "06/05/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 11, name: "PayPal", date: "06/05/2025", amount: "6,19 €", type: "income" },
+  { id: 12, name: "Stefanie Ghassemieh", date: "05/05/2025", amount: "34,72 €", type: "income" },
+  { id: 13, name: "Anja Breiding", date: "04/05/2025", amount: "57,13 €", type: "income" },
+  { id: 15, name: "Fastspring BV", date: "04/05/2025", amount: "-19,06 €", type: "outcome" },
+  { id: 16, name: "PayPal", date: "04/05/2025", amount: "19,06 €", type: "income" },
+  { id: 17, name: "Gesa Engel", date: "03/05/2025", amount: "25,59 €", type: "income" },
+  { id: 19, name: "Deutsche Post AG", date: "01/05/2025", amount: "-7,69 €", type: "outcome" },
+  { id: 20, name: "PayPal", date: "01/05/2025", amount: "7,69 €", type: "income" },
+
+  // April 2025
+  { id: 21, name: "Heike Schulz", date: "30/04/2025", amount: "53,36 €", type: "income" },
+  { id: 22, name: "IONOS SE", date: "29/04/2025", amount: "-31,51 €", type: "outcome" },
+  { id: 23, name: "Wencke Ettrich", date: "28/04/2025", amount: "83,26 €", type: "income" },
+  { id: 25, name: "Maik Böbel", date: "28/04/2025", amount: "22,16 €", type: "income" },
+  { id: 26, name: "Deutsche Post AG", date: "28/04/2025", amount: "-30,95 €", type: "outcome" },
+  { id: 27, name: "PayPal", date: "28/04/2025", amount: "30,95 €", type: "income" },
+  { id: 29, name: "Carla Siemund", date: "27/04/2025", amount: "38,10 €", type: "income" },
+  { id: 30, name: "Jessica Beinlich", date: "26/04/2025", amount: "74,80 €", type: "income" },
+  { id: 31, name: "Nicole Vater", date: "26/04/2025", amount: "30,32 €", type: "income" },
+  { id: 34, name: "Fiete Fölster", date: "24/04/2025", amount: "43,89 €", type: "income" },
+  { id: 36, name: "Deutsche Post AG", date: "24/04/2025", amount: "-7,69 €", type: "outcome" },
+  { id: 37, name: "PayPal", date: "24/04/2025", amount: "7,69 €", type: "income" },
+  { id: 38, name: "Peggy Möller", date: "22/04/2025", amount: "32,74 €", type: "income" },
+  { id: 40, name: "Jasmin Radmacher", date: "22/04/2025", amount: "25,59 €", type: "income" },
+
+  // Weitere Transaktionen...
+  { id: 41, name: "Netflix.com", date: "18/04/2025", amount: "-16,37 €", type: "outcome" },
+  { id: 42, name: "Billiger Mietwagen", date: "18/04/2025", amount: "-440,00 €", type: "outcome" },
+  { id: 43, name: "CMC Tashy Group BV", date: "18/04/2025", amount: "-362,91 €", type: "outcome" },
+  { id: 44, name: "Katharina Laugner", date: "18/04/2025", amount: "27,52 €", type: "income" },
+  { id: 45, name: "Heike Budewett", date: "18/04/2025", amount: "74,13 €", type: "income" },
+  { id: 46, name: "Katja Kabelitz", date: "18/04/2025", amount: "73,60 €", type: "income" },
+  { id: 47, name: "Deutsche Post AG", date: "17/04/2025", amount: "-18,57 €", type: "outcome" },
+  { id: 48, name: "PayPal", date: "17/04/2025", amount: "18,57 €", type: "income" },
+  { id: 49, name: "Deutsche Post AG", date: "17/04/2025", amount: "-12,38 €", type: "outcome" },
+  { id: 50, name: "PayPal", date: "17/04/2025", amount: "12,38 €", type: "income" },
+
+  // März 2025 usw. (fortsetzen für alle 9 Seiten)
+].reverse(); // Wichtig: Kehrt die Reihenfolge um für "neueste zuerst"
   const handleLogin = () => {
     if (username === 'GoonDocksHaderslev' && password === '132313') {
       setLoggedIn(true);
@@ -98,7 +123,7 @@ export default function App() {
 
       <div className="balance-card">
         <p>Din saldo</p>
-        <h2>1.296,61 €</h2>
+        <h2>2.209,10 €</h2>
       </div>
 
       <div className="button-container">
