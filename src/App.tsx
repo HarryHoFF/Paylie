@@ -17,12 +17,27 @@ export default function App() {
   const [currentAction, setCurrentAction] = useState<'send' | 'request' | null>(null);
 
   const transactions: Transaction[] = [
-    { id: 1, name: "Freelance Arbeit", date: "15. maj 2024", amount: "+245,50 €", type: "income" },
-    { id: 2, name: "Webshop Refusion", date: "12. maj 2024", amount: "-89,99 €", type: "outcome" },
-    { id: 3, name: "Kunde A/S", date: "8. maj 2024", amount: "+1.200,00 €", type: "income" },
-    { id: 4, name: "Server Hosting", date: "2. maj 2024", amount: "-59,90 €", type: "outcome" }
-  ];
-
+  { id: 1, name: "Deutsche Post AG", date: "01/04/2025", amount: "-20,07 €", type: "outcome" },
+  { id: 2, name: "PayPal", date: "01/04/2025", amount: "20,07 €", type: "income" },
+  { id: 3, name: "Deutsche Post AG", date: "01/04/2025", amount: "-20,07 €", type: "outcome" },
+  { id: 4, name: "Jana Schlechte", date: "01/04/2025", amount: "68,86 €", type: "income" },
+  { id: 5, name: "Nicole Boer", date: "02/04/2025", amount: "76,20 €", type: "income" },
+  { id: 6, name: "GOESTA-PER SIEVERS", date: "02/04/2025", amount: "-210,00 €", type: "outcome" },
+  { id: 7, name: "Jana Schlechte", date: "02/04/2025", amount: "-7,63 €", type: "outcome" },
+  { id: 8, name: "Jana Schlechte", date: "02/04/2025", amount: "34,28 €", type: "income" },
+  { id: 9, name: "Susanne Hauswirth", date: "02/04/2025", amount: "-74,76 €", type: "outcome" },
+  { id: 10, name: "Susanne Hauswirth", date: "02/04/2025", amount: "-38,19 €", type: "outcome" },
+  { id: 11, name: "Mayling Keun", date: "03/04/2025", amount: "31,38 €", type: "income" },
+  { id: 12, name: "Deutsche Post AG", date: "04/04/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 13, name: "PayPal", date: "04/04/2025", amount: "6,19 €", type: "income" },
+  { id: 14, name: "Deutsche Post AG", date: "04/04/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 15, name: "Fastspring BV", date: "04/04/2025", amount: "-19,06 €", type: "outcome" },
+  { id: 16, name: "PayPal", date: "04/04/2025", amount: "19,06 €", type: "income" },
+  { id: 17, name: "GOESTA-PER SIEVERS", date: "07/04/2025", amount: "210,00 €", type: "income" },
+  { id: 18, name: "Bernd Weiß", date: "08/04/2025", amount: "109,48 €", type: "income" },
+  { id: 19, name: "Ann-Kathrin Wille", date: "08/04/2025", amount: "31,33 €", type: "income" },
+  { id: 20, name: "Alexandra Sentner", date: "09/04/2025", amount: "133,59 €", type: "income" },
+];
   const handleLogin = () => {
     if (username === 'GoonDocksHaderslev' && password === '132313') {
       setLoggedIn(true);
