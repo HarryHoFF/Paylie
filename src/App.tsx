@@ -40,7 +40,7 @@ export default function App() {
     return (
       <div className="login-container">
         <div className="login-box">
-          <h2>PayPal Erhverv Login</h2>
+          <h2>PayPal Erhvers Login</h2>
           <input
             type="text"
             placeholder="Brugernavn"
@@ -76,7 +76,7 @@ export default function App() {
       <header className="header">
         <div className="title-container">
           <h1>PayPal</h1>
-          <p className="subtitle">Erhverv</p>
+          <p className="subtitle">Erhvers</p>
         </div>
         <div className="notification-icon">🔔</div>
       </header>
