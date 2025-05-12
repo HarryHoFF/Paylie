@@ -18,6 +18,8 @@ export default function App() {
 
 const transactions: Transaction[] = [
   // Mai 2025
+  { id: 110, name: "Carrie Liepelt", date: "12/05/2025", amount: "26,85 €", type: "income" },
+  { id: 109, name: "Deutsche Post AG", date: "12/05/2025", amount: "-6,19 €", type: "outcome" },
   { id: 1, name: "Mona Ursula Plieninger", date: "09/05/2025", amount: "46,31 €", type: "income" },
   { id: 3, name: "Deutsche Post AG", date: "09/05/2025", amount: "-6,19 €", type: "outcome" },
   { id: 4, name: "PayPal", date: "09/05/2025", amount: "6,19 €", type: "income" },
