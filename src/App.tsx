@@ -17,8 +17,10 @@ export default function App() {
   const [currentAction, setCurrentAction] = useState<'send' | 'request' | null>(null);
 
 const transactions: Transaction[] = [
-  // Mai 2025
-  { id: 139, name: "Frank Dittel", date: "08/06/2025", amount: "6,95 €", type: "income" },
+  // Mai 2025  
+  { id: 142, name: "Deutsche Post AG", date: "11/06/2025", amount: "-18,57 €", type: "outcome" }, 
+  { id: 141, name: "Nadine Albers", date: "11/06/2025", amount: "75,80 €", type: "income" },
+  { id: 140, name: "Marleen Traeger", date: "10/06/2025", amount: "26,85 €", type: "income" },
   { id: 138, name: "Frank Dittel", date: "08/06/2025", amount: "30,32 €", type: "income" },
   { id: 137, name: "Deutsche Post AG", date: "07/06/2025", amount: "-6,19 €", type: "outcome" }, 
   { id: 136, name: "Sophie Lude", date: "07/06/2025", amount: "29,80 €", type: "income" },
