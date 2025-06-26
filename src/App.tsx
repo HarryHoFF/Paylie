@@ -170,7 +170,7 @@ const transactions: Transaction[] = [
 
       <div className="balance-card">
         <p>Din saldo</p>
-        <h2>3.892,77 €</h2>
+        <h2>3.792,77 €</h2>
       </div>
 
       <div className="button-container">
