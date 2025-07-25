@@ -18,7 +18,7 @@ export default function App() {
 
 const transactions: Transaction[] = [
   // Mai 2025 
-  { id: 177, name: "Heike Budeweit", date: "25/07/2025", amount: "78,85 €", type: "income" },
+  { id: 177, name: "Heike Budeweit", date: "25/07/2025", amount: "78,65 €", type: "income" },
   { id: 176, name: "Deutsche Post AG", date: "25/07/2025", amount: "-6,19 €", type: "outcome" },
   { id: 175, name: "Lisa Garhammer", date: "23/07/2025", amount: "-45,80 €", type: "outcome" },
   { id: 174, name: "Lisa Garhammer", date: "21/07/2025", amount: "45,80 €", type: "income" },
