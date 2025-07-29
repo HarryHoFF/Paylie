@@ -18,6 +18,9 @@ export default function App() {
 
 const transactions: Transaction[] = [
   // Mai 2025 
+  { id: 182, name: "Miriam Mittelstaedt", date: "27/07/2025", amount: "24,57 €", type: "income" },
+  { id: 181, name: "Fiete Fölster", date: "27/07/2025", amount: "43,89 €", type: "income" },
+  { id: 180, name: "Deutsche Post AG", date: "26/07/2025", amount: "-20,07 €", type: "outcome" },
   { id: 179, name: "Jasmin Radmacher", date: "25/07/2025", amount: "26,85 €", type: "income" },
   { id: 178, name: "Georg Mittag", date: "25/07/2025", amount: "21,85 €", type: "income" },
   { id: 177, name: "Heike Budeweit", date: "25/07/2025", amount: "78,65 €", type: "income" },
@@ -195,7 +198,7 @@ const transactions: Transaction[] = [
 
       <div className="balance-card">
         <p>Din saldo</p>
-        <h2>4.248,85 €</h2>
+        <h2>4.297,24 €</h2>
       </div>
 
       <div className="button-container">
