@@ -18,6 +18,7 @@ export default function App() {
 
 const transactions: Transaction[] = [
   // Mai 2025 
+  { id: 215, name: "Martina Lorenzen", date: "14/08/2025", amount: "26,85 €", type: "income" },
   { id: 216, name: "Deutsche Post AG", date: "14/08/2025", amount: "-37,14 €", type: "outcome" },
   { id: 215, name: "Carmen Lohn", date: "13/08/2025", amount: "57,80 €", type: "income" },
   { id: 214, name: "CMC Tasly Group BV", date: "13/08/2025", amount: "-83,25 €", type: "outcome" },
