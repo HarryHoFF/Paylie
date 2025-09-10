@@ -18,7 +18,18 @@ export default function App() {
 
 const transactions: Transaction[] = [
   // Mai 2025 
-  { id: 244, name: "Kristin Sönnichsen", date: "06/09/2025", amount: "61,80 €", type: "income" },
+  { id: 244, name: "Larissa Schütze", date: "10/09/2025", amount: "45,80 €", type: "income" },
+  { id: 243, name: "Deutsche Post AG", date: "08/09/2025", amount: "-7,69 €", type: "outcome" },
+  { id: 243, name: "Deutsche Post AG", date: "10/09/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 243, name: "Deutsche Post AG", date: "10/09/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 244, name: "Simone Bliefernich", date: "10/09/2025", amount: "64,75 €", type: "income" },
+  { id: 244, name: "Andrea Mecky", date: "08/09/2025", amount: "64,75 €", type: "income" },
+  { id: 243, name: "Deutsche Post AG", date: "08/09/2025", amount: "-10,49 €", type: "outcome" },
+  { id: 243, name: "Deutsche Post AG", date: "08/09/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 244, name: "Anneke Kastner", date: "08/09/2025", amount: "75,80 €", type: "income" },
+  { id: 243, name: "Deutsche Post AG", date: "08/09/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 243, name: "Deutsche Post AG", date: "08/09/2025", amount: "-6,19 €", type: "outcome" },
+  { id: 244, name: "Kristin Sönnichsen", date: "07/09/2025", amount: "61,80 €", type: "income" },
   { id: 244, name: "Silke Dörnbach", date: "06/09/2025", amount: "100,40 €", type: "income" },
   { id: 244, name: "Jörg Diestel", date: "05/09/2025", amount: "23,80 €", type: "income" },
   { id: 243, name: "Deutsche Post AG", date: "05/09/2025", amount: "-6,19 €", type: "outcome" },
@@ -268,7 +279,7 @@ const transactions: Transaction[] = [
 
       <div className="balance-card">
         <p>Din saldo</p>
-        <h2>5.786,08 €</h2>
+        <h2>5.988,05 €</h2>
       </div>
 
       <div className="button-container">
